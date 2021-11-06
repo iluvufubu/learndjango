@@ -1,0 +1,13 @@
+1634174638857	geckodriver	INFO	Listening on 127.0.0.1:55085
+1634174641927	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\sures\\AppData\\Local\\Temp\\rust_mozprofileI70z39"
+1634174642443	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\sures\\AppData\\Local\\Temp\\rust_mozprofileI70z39\\search.json.mozlz4", (void 0)))
+1634174645172	Marionette	INFO	Listening on port 55093
+JavaScript error: resource://services-settings/Attachments.jsm, line 391: TypeError: http://%(server)s/dummy/blocklist// is not a valid URL.
+1634174645629	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1634174648056	Marionette	INFO	Stopped listening on port 55093
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
