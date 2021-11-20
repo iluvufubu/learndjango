@@ -1,0 +1,15 @@
+[Unit]
+Description=Gunicorn server for stagingottg.live
+
+[Service]
+Restart=on-failure
+User=rudy3
+WorkingDirectory=/home/rudy3/sites/stagingottg.live
+EnvironmentFile=/home/rudy3/sites/stagingottg.live/.env
+
+ExecStart=/home/rudy3/sites/stagingottg.live/virtualenv/bin/gunicorn \
+    --bind unix:/tmp/stagingottg.live.socket \
+    djangonewproject.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
