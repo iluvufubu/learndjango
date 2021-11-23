@@ -25,7 +25,8 @@ def _get_latest_source():
 def _update_virtualenv():
     if not exists('virtualenv/bin/pip'):
         run(f'python3.6 -m venv virtualenv')
-    run('./virtualenv/bin/pip install requirements.txt')
+    run('./virtualenv/bin/pip install django==1.11.17')
+    run('./virtualenv/bin/pip install gunicorn')
 
 def _create_or_update_dotenv():
     append('.env', 'DJANGO_DEBUG_FALSE=y')
